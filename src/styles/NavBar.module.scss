@@ -1,0 +1,26 @@
+.nav {
+    display: flex;    
+    justify-content: space-around;
+
+    .icon_nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .btn_nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    p {
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+}

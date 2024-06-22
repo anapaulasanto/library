@@ -1,0 +1,41 @@
+.book_container {
+    img {
+        width: 270px;
+        margin-top: 20px;
+    }
+
+    .back_btn {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        background-color: rgb(165, 167, 169);
+        width: 80px;
+        height: 30px;
+        margin: 10px auto;
+        border-radius: 20px;
+        align-items: center;
+
+        &:hover {
+            background-color: rgb(181, 179, 179);
+        }
+    }
+
+    .book_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            margin-top: 50px;
+        }
+
+        span {
+            text-align: center;
+            width: 750px;
+            margin: 40px 0;
+        }
+    }
+}

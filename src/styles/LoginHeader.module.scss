@@ -1,0 +1,22 @@
+.login_container {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+
+    .btn_user {
+        border-radius: 50%;
+        padding: 20px;
+        margin-right: 55px;
+    }
+
+
+    .back {
+        display: flex;
+        align-items: center;
+        
+        .back_btn {
+            margin-left:500px;
+            
+        }
+    }
+}
