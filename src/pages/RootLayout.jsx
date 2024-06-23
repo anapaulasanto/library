@@ -10,7 +10,7 @@ const RootLayout = () => {
                 <Outlet />
             </main>
             <footer className={styles.footer}>
-                Ana paua &copy; <span>2024</span>
+                Ana paula &copy; <span>2024</span>
             </footer> 
         </>
     )
