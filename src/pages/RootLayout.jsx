@@ -2,7 +2,6 @@ import Header from "../components/Header"
 import { Outlet } from "react-router-dom";
 import styles from '../styles/RootLayout.module.scss';
 
-
 const RootLayout = () => {
     return (
         <>
@@ -10,9 +9,9 @@ const RootLayout = () => {
             <main>
                 <Outlet />
             </main>
-            <footer>
-                Ana paula &copy; <span>2024</span>
-            </footer>
+            <footer className={styles.footer}>
+                Ana paua &copy; <span>2024</span>
+            </footer> 
         </>
     )
 }
