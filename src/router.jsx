@@ -22,7 +22,10 @@ const router = createBrowserRouter([
         }, {
             path: "registerBooks",
             element: <LoginAdmin />
-            }
+            }, {
+                path: "library",
+                element: <RootLayout />,
+            },
         ]
     }, {
         path: "admin",
@@ -30,7 +33,7 @@ const router = createBrowserRouter([
     }, {
         path: "admin/registerBooks",
         element: <LoginAdmin />
-    }
-])
+    },
+]);
 
 export default router;
