@@ -8,7 +8,7 @@ const LoginHeader = () => {
         <div >
             <div className={styles.login_container}>
                 <NavBar logo={logo} />
-                <button className={styles.btn_user}><FaUser /></button>
+                
             </div>
         </div>
     );
