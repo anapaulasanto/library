@@ -1,6 +1,0 @@
-Flask
-flask-pymongo
-flask-cors
-Flask-login
-python-dotenv
-flask-bcrypt
