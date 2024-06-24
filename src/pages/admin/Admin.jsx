@@ -6,6 +6,7 @@ import logo from '../../assets/logo-nav.svg'
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
+import API_URL from "../../../src/config"
 
 
 const Admin = () => {
@@ -30,7 +31,7 @@ const Admin = () => {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/register', formData)
+            const response = await axios.post(`${API_URL}/register`, formData)
             alert('Cadastrado com sucesso')
             setFormData({ username: '', password: '' });
             setMessage('');
@@ -49,7 +50,7 @@ const Admin = () => {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/login', formData);
+            const response = await axios.post(`${API_URL}/login`, formData);
             navigate('/admin/registerBooks');
         } catch (error) {
             setMessage('Não encontramos uma conta associada');

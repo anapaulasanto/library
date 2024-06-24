@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import styles from '../styles/Book.module.scss'
-
+import API_URL from "../../src/config"
 
 const Book = () => {
     const { bookId } = useParams();
@@ -11,7 +11,7 @@ const Book = () => {
     useEffect(() => {
         const fetchBook = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/books/${bookId}`);
+                const response = await axios.get(`${API_URL}/books/${bookId}`);
                 setBook(response.data);
             } catch(error) {
                 alert('ERRO');

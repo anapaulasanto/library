@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import NavBar from '../../pages/NavBar';
 import logo from '../../assets/logo-nav.svg';
 import { FaUser } from "react-icons/fa";
+import API_URL from "../../../src/config"
 
 const LoginAdmin = () => {
     const [formData, setFormData] = useState({
@@ -31,7 +32,7 @@ const LoginAdmin = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/books', formData);
+            const response = await axios.post(`${API_URL}/books`, formData);
             alert('Adicionado com sucesso')
             setFormData({ title: '', author: '', year: '', image: '', description: '' });
         } catch (error) {
