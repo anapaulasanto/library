@@ -1,0 +1,33 @@
+.header {
+  border-bottom: 1px solid rgb(179, 174, 174);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .link_nav {
+    text-decoration: none;
+    color: #272727;
+    padding: 10px 25px;
+    margin: 20px 20px 20px 10px;
+    border-bottom: 1px solid rgb(93, 69, 23);
+    font-weight: 600;
+
+    &:hover {
+      border-bottom: 1px solid rgb(231, 214, 88);
+      transition: all .4s;
+    }
+  }
+
+  .admin_btn {
+    margin-left: 20%;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+}

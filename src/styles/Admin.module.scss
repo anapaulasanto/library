@@ -1,0 +1,128 @@
+.admin {
+    background-color: rgb(69, 69, 69);
+    color: white;
+    padding-bottom: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .btn_user {
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .logo {
+        display: flex;
+        margin-left: 20%;
+        
+        .back_btn {
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            border-radius: 20px;
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+            margin-left: 500px;
+            margin-top: 40px;
+            width: 90px;
+            height: 40px;
+            background-color: rgb(85, 85, 85);
+
+
+            &:hover {
+                background-color: rgb(181, 179, 179);
+            }
+        }
+    }
+
+    
+}
+
+.admin_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10%;
+
+    .text_side {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+            letter-spacing: 11.5px;
+            font-size: 2.6em;
+            margin: 0 0 40px 0;
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            text-align: center;
+            letter-spacing: 3px;
+        }
+    }
+
+    .form_side {
+        background-color: rgba(211, 211, 211, 0.193);
+        padding: 30px 50px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 30px;
+        margin-right: 110px;
+
+        p {
+            text-align: center;
+            color: rgb(255, 99, 99);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            
+            label {
+                font-weight: 600;
+            }
+
+            input {
+                border: none;
+                color: rgb(6, 6, 6);
+                margin-right: 20px;
+                padding: 10px 50px;
+                margin: 20px 0;
+                background-color: transparent;
+                border-bottom: 1px solid rgb(173, 173, 173);
+                outline: none;
+            }
+        }
+
+        .btn {
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            display: flex;
+            margin-top: 20px;
+
+            button {          
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            background-color: rgb(85, 85, 85);
+            border-radius: 20px;
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px auto;
+
+            &:hover {
+                background-color: rgb(181, 179, 179);
+            }
+        }
+        }
+    }
+}
