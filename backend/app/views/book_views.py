@@ -20,6 +20,7 @@ def retrieve_book(book_id):
 @book_bp.route('/books', methods=['GET'])
 def list_books():
     query = request.args.get('q', '')
+    print(f"Query received: {query}")
     books = search_books(query)
     return jsonify(books)
 
