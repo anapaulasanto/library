@@ -13,7 +13,7 @@ def create_app():
     app.config.from_object('config.Config')
 
     mongo.init_app(app)
-    CORS(app)
+    CORS(app, resources={r"/*": {"origins": "https://library-hazel-nine.vercel.app"}})
     login_manager.init_app(app)
     bcrypt.init_app(app)
 

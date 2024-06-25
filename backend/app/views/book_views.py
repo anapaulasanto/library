@@ -1,7 +1,9 @@
 from flask import Blueprint, request, jsonify
 from app.controllers.book_controller import add_book, get_book, search_books, delete_book
+from flask_cors import CORS
 
 book_bp = Blueprint('book', __name__)
+CORS(book_bp, resources={r"/*": {"origins": "https://library-hazel-nine.vercel.app"}})
 
 @book_bp.route('/books', methods=['POST'])
 def create_book():
